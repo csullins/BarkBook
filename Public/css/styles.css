@@ -22,6 +22,7 @@ nav {
   font-family: 'Lobster Two', cursive;
   background-color: #1f2029;
   color: #c4c3ca;
+  border: none;
 }
 .cards-list {
   z-index: 0;
