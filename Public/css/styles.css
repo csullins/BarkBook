@@ -10,7 +10,8 @@ body{
 	overflow-x: hidden;
 }
 header {
-  opacity: .7;
+  /* opacity: .7; */
+  color: white;
   font-family: 'Lobster Two', cursive;
   font-size: 80px;
   margin-left: auto;
@@ -19,23 +20,33 @@ header {
   text-align: center;
 }
 nav {
-  opacity: .7;
   font-size: 20px;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  background-color: #1f2029;
+}
+.homeBtn:hover, .logoutBtn:hover {
+  color: white;
+  font-size: 16px;
+  transform: scale(0.9, 0.9);
 }
 .homeBtn, .logoutBtn {
   font-family: 'Lobster Two', cursive;
   background-color: transparent;
   color: #c4c3ca;
   border: none;
+  transition: .4s;
 }
 .cards-list {
   z-index: 0;
-  width: 100%;
+  padding-top: 30px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -61,7 +72,6 @@ h2 {
 
 .card .card_image img {
   width: inherit;
-  /* height: inherit; */
   border-radius: 40px;
   object-fit: cover;
 }
@@ -83,7 +93,7 @@ img{
 .card:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
+  -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
 @media all and (max-width: 500px) {
@@ -108,12 +118,13 @@ img{
 	background: #222;
 	padding: 40px;
 	border-radius: 5px;
+  border: rgb(0, 255, 102) 10px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   transition: 0.4s;
 }
 
 .signup-form:hover, .login-form:hover {
-  transform: scale(0.9, 0.9);
+  transform: scale(1.2, 1.2);
   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
   -5px -5px 30px 15px rgba(0,0,0,0.22);
   transition: 0.4s;
@@ -122,6 +133,7 @@ img{
 .submitBtn {
   background-color: transparent;
   border: 1px solid #c4c3ca;
+  border-radius: 5px;
   color: #c4c3ca;
   font-size: 15px;
   font-weight: bold;
@@ -129,45 +141,29 @@ img{
   cursor: pointer;
   transition: all .10s;
 }
+
+.submitBtn:hover {
+  background-color: black;
+}
+
 input {
-  border-radius: 10px;
+  border-radius: 5px;
   border: transparent;
   height: 20px;
   margin: 2%;
 }
 input[type="password"] {
   margin-bottom: 15px;
-
+  
 }
 
 .gradient1 {
-    background: linear-gradient(324deg, #09a6d2,  rgba(167, 0, 167, 0.731),  #09a6d2, #16c479);
-    background-size: 600% 600%;
-    -webkit-animation: gradientAnimation 10s ease infinite;
-    -moz-animation: gradientAnimation 10s ease infinite;
-    -o-animation: gradientAnimation 10s ease infinite;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-@-webkit-keyframes gradientAnimation {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
-}
-@-moz-keyframes gradientAnimation {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
-}
-@-o-keyframes gradientAnimation {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
-}
-@keyframes gradientAnimation {
-    0%{background-position:15% 0%}
-    50%{background-position:86% 100%}
-    100%{background-position:15% 0%}
+  background: linear-gradient(324deg, #09a6d2,  rgba(167, 0, 167, 0.731),  #09a6d2, #16c479);
+  background-size: 600% 600%;
+  -webkit-animation: gradientAnimation 10s ease infinite;
+  -moz-animation: gradientAnimation 10s ease infinite;
+  -o-animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
 }
 .gradient2 {
   background: linear-gradient(324deg, #09a6d2,  rgba(167, 0, 167, 0.731),  #09a6d2, #16c479);
@@ -176,4 +172,55 @@ input[type="password"] {
   -moz-animation: gradientAnimation 15s ease infinite;
   -o-animation: gradientAnimation 15s ease infinite;
   animation: gradientAnimation 15s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 0%}
+  100%{background-position:15% 0%}
+}
+@-moz-keyframes gradientAnimation {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 0%}
+  100%{background-position:15% 0%}
+}
+@-o-keyframes gradientAnimation {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 0%}
+  100%{background-position:15% 0%}
+}
+@keyframes gradientAnimation {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 0%}
+  100%{background-position:15% 0%}
+}
+
+/* profile page */
+h4 {
+  text-align: center;
+  margin-top: 0;
+}
+.commentSection {
+  padding-top: 50px;
+  display: inline-flex ;
+  flex-direction: row;
+  margin-left: 10%;
+}
+.comments {
+  margin-top: 15%;
+  width: 50%;
+  color: white;
+}
+.groomerContact {
+  border: solid white 2px;
+  width: 50%;
+  height: 20px;
+  align-self: top;
+}
+span {
+  font-weight: lighter;
+  color: white;
+}
+li {
+  padding: 2%;
 }
