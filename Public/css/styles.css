@@ -5,7 +5,6 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
-	line-height: 1.7;
 	color: #c4c3ca;
 	background-color: #1f2029;
 	overflow-x: hidden;
@@ -13,7 +12,7 @@ body{
 header {
   opacity: .7;
   font-family: 'Lobster Two', cursive;
-  font-size: 50px;
+  font-size: 80px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10%;
@@ -30,7 +29,7 @@ nav {
 }
 .homeBtn, .logoutBtn {
   font-family: 'Lobster Two', cursive;
-  background-color: #1f2029;
+  background-color: transparent;
   color: #c4c3ca;
   border: none;
 }
@@ -105,7 +104,7 @@ img{
 .signup-form, .login-form {
   margin-left: auto;
   margin-right: auto;
-  /* transform: translate(-50%, -50%); */
+  color: white;
 	background: #222;
 	padding: 40px;
 	border-radius: 5px;
@@ -121,5 +120,60 @@ img{
 }
 
 .submitBtn {
-  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #c4c3ca;
+  color: #c4c3ca;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 45px;
+  cursor: pointer;
+  transition: all .10s;
+}
+input {
+  border-radius: 10px;
+  border: transparent;
+  height: 20px;
+  margin: 2%;
+}
+input[type="password"] {
+  margin-bottom: 15px;
+
+}
+
+.gradient1 {
+    background: linear-gradient(324deg, #09a6d2,  rgba(167, 0, 167, 0.731),  #09a6d2, #16c479);
+    background-size: 600% 600%;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+@keyframes gradientAnimation {
+    0%{background-position:15% 0%}
+    50%{background-position:86% 100%}
+    100%{background-position:15% 0%}
+}
+.gradient2 {
+  background: linear-gradient(324deg, #09a6d2,  rgba(167, 0, 167, 0.731),  #09a6d2, #16c479);
+  background-size: 600% 600%;
+  -webkit-animation: gradientAnimation 15s ease infinite;
+  -moz-animation: gradientAnimation 15s ease infinite;
+  -o-animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 15s ease infinite;
 }
