@@ -147,11 +147,11 @@ img{
   font-weight: bold;
   padding: 5px 45px;
   cursor: pointer;
-  transition: all .10s;
+  transition: all 1s;
 }
 
 .submitBtn:hover {
-  background-color: black;
+  background-color:  rgba(255, 251, 0, 0.771);
 }
 
 input {
