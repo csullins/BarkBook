@@ -99,8 +99,7 @@ img{
 }
 
 @media all and (max-width: 500px) {
-  .card-list, .main {
-    /* On small screens, change to  column */
+  .card-list {
     flex-direction: column;
   }
 }
