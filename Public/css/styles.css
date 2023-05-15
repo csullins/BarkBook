@@ -175,9 +175,9 @@ input[type="password"] {
 }
 
 .homeGradient {
-  height: 250vw;
+  height: 230vw;
   background-image: linear-gradient(
-    rgb(12, 1, 28),
+    rgba(28, 11, 53, 0.744),
     rgba(37, 27, 48, 0.689),
     #5a80a2
      );
