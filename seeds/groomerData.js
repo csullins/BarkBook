@@ -1,7 +1,6 @@
+// Enter data in Groomer's table
+
 const { Groomer } = require('../models');
-
-
-
 const groomerdata =
 [
   {
@@ -11,7 +10,7 @@ const groomerdata =
     "email": "Jack@gmail.co,",
     "phone":"512112456",
     "motto":"likes pet",
-    "userId": 1,
+    
   },
   {
     "name":"Simon",
@@ -19,7 +18,7 @@ const groomerdata =
      "email": "Simon@gmail.co,",
     "phone":"5123344545",
     "motto":"likes pet",
-    "userId": 2,
+
   },
   {
     "name":"Chirst",
@@ -27,7 +26,7 @@ const groomerdata =
     "email": "christ@gmail.co,",
     "phone":"5127286741",
     "motto":"happy pet",
-    "userId": 3,
+
   },
   {
     "name":"Jony",
@@ -35,15 +34,14 @@ const groomerdata =
     "email": "jony@gmail.co,",
     "phone":"512112456",
     "motto":"likes pet",
-    "userId": 1,
-  },
+      },
   {
     "name":"Jay",
     "profilePicture": "profile5.png",
     "email": "jay@gmail.co,",
     "phone":"512112456",
     "motto":"likes pet",
-    "userId": 2,
+
   },
   {
     "name":"Fami",
@@ -51,7 +49,7 @@ const groomerdata =
     "email": "Fami@gmail.co,",
     "phone":"512112456",
     "motto":"likes pet",
-    "userId": 2,
+  
   },
   {
     "name":"Gigi",
@@ -59,7 +57,7 @@ const groomerdata =
      "email": "gigi@gmail.co,",
     "phone":"5121113234",
     "motto":"likes pet",
-    "userId": 2,
+
   },
   {
     "name":"Han",
@@ -67,7 +65,7 @@ const groomerdata =
      "email": "han@gmail.co,",
     "phone":"512112456",
     "motto":"likes pet",
-    "userId": 2,
+
   },
   {
     "name":"Nency",
@@ -75,7 +73,7 @@ const groomerdata =
     "email": "Nency@gmail.co,",
     "phone":"5128896754",
     "motto":"likes pet",
-    "userId": 2,
+
   },
   {
     "name":"Jay",
@@ -83,7 +81,7 @@ const groomerdata =
      "email": "jay@gmail.co,",
     "phone":"5121123423",
     "motto":"likes pet",
-    "userId": 2,
+
   },
   {
     "name":"Khyti",
@@ -91,7 +89,7 @@ const groomerdata =
      "email": "khyti@gmail.co,",
     "phone":"512112456",
     "motto":"likes pet",
-    "userId": 2,
+
   },
   {
     "name":"Lalo",
@@ -99,7 +97,7 @@ const groomerdata =
      "email": "lalo@gmail.co,",
     "phone":"512112456",
     "motto":"likes pet",
-    "userId": 2,
+
   },
  
 

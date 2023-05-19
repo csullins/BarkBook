@@ -1,3 +1,5 @@
+// javascript file for login
+
 const loginFormHandler = async (event) => {
   console.log("inside login form handler");
     event.preventDefault();
@@ -32,7 +34,7 @@ const loginFormHandler = async (event) => {
     console.log(signUpEmail);
     console.log(signUpPassword);
     if (username && email && password) {
-      const response = await fetch('/api/users', {
+      const response = await fetch('/api/users/', {
         method: 'POST',
         body: JSON.stringify({ username, email, password }),
         headers: { 'Content-Type': 'application/json' },
