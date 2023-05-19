@@ -1,47 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Public/css/styles.css">
-  <title>BarkBook | Profile</title>
-</head>
-<body class="profileGradient">
-  <nav>
-    <button class="homeBtn">BarkBook.</button>
-    <button class="logoutBtn">Log Out</button>
-  </nav>
+
+
   <Section class="commentSection">
+    <div class="container">
+       
+      <div class="col-md-4">
     <div class="cards-list">
       <div class=" card">
         <div class="card_image">
-          <h2>Groomer One</h2>
-          <img src="../Public/assets/profile1.png"/> 
+           <a href="/groomer/{{groomer.id}}"></a>
+          <h2>{{groomer.name}}</h2>
+         <img src="/assets/{{groomer.profilePicture}}"> 
         </div>
         <h5>
-          Email: <span>sirgroomsalot@email.com</span><br>
-          Phone: <span>987-654-3210</span><br>
-          Motto: <span>"Grooming is my passion, dogs are my inspiration!"</span>
+          Email: <span>{{groomer.email}}</span><br>
+          Phone: <span>{{groomer.phone}}</span><br>
+          Motto: <span>{{groomer.motto}}</span>
         </h5>
+        
       </div>
+       
       </div>
+     
     </div>
+</div>
+<div class="col-md-8">
+ <a href="/groomer/{{groomer.id}}/newreview/">➕ New Review</a>
 
-    <ul class="comments">
-      <li>
-       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quod labore, reprehenderit nihil quo ullam fugit voluptas hic placeat tempore alias."
-      </li>
-      <li>
-        "Quod labore, reprehenderit nihil quo ullam fugit voluptas hic placeat tempore alias."
-      </li>
-      <li>
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas non debitis dignissimos reiciendis, consectetur praesentium a pariatur vitae laborum officia nostrum rerum beatae earum, voluptas minus accusantium aspernatur, voluptate animi!"
-      </li>
-      <li>
-        "Modi tenetur minima corrupti nobis quas, quia qui aliquam perspiciatis?"
-      </li>
-    </ul>
+{{> comments groomer.comments}}
+     </div>  
+  </div>
+
   </Section>
   
-</body>
+

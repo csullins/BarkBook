@@ -1,23 +1,39 @@
-const Driver = require('./Driver');
-const License = require('./License');
-const Car = require('./Car');
 
-Driver.hasOne(License, {
-  foreignKey: 'driver_id',
-  onDelete: 'CASCADE',
+const User = require('./User');
+const Comment = require('./Comment');
+const Groomer = require('./Groomer');
+
+User.hasMany(Groomer, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
 });
 
-License.belongsTo(Driver, {
-  foreignKey: 'driver_id',
+User.hasMany(Comment, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
 });
 
-Driver.hasMany(Car, {
-  foreignKey: 'driver_id',
-  onDelete: 'CASCADE',
+Groomer.belongsTo(User, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
 });
 
-Car.belongsTo(Driver, {
-  foreignKey: 'driver_id',
+Groomer.hasMany(Comment, {
+  foreignKey: 'groomerId',
+  onDelete: 'CASCADE'
 });
 
-module.exports = { Driver, License, Car };
+Comment.belongsTo(User, {
+  foreignKey: 'userId',
+});
+
+Comment.belongsTo(Groomer, {
+  foreignKey: 'groomerId'
+});
+
+module.exports = {
+  User,
+  Comment,
+  Groomer,
+
+};

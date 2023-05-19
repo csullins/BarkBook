@@ -1,0 +1,12 @@
+<div class="review">
+  {{#each this}}
+  <div class="eachreview">
+    <p class="card-body2">
+    {{commentText}}
+    </br></br>
+    
+- {{user.username}}, {{format_date dateCreated}}
+    </p>
+  </div>
+  {{/each}}
+</div>

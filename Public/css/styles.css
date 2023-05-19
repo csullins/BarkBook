@@ -47,9 +47,12 @@ nav {
 .cards-list {
   z-index: 0;
   padding-top: 30px;
-  display: flex;
+
+  display: inline-flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
+
 }
 h2 {
   text-align: center;
@@ -252,6 +255,20 @@ ul {
   font-size: 1.8vw;
 
 }
+
+
+.review{
+  margin-top: 10%;
+  width: 100%;
+  color: white;
+ 
+  font-size: 1.8vw;
+}
+
+.eachreview{
+  background-color: purple;
+}
+
 .groomerContact {
   border: solid white 2px;
   width: 50%;
@@ -264,4 +281,42 @@ span {
 }
 li {
   padding: 2%;
+
 }
+
+.groomer{
+  align-items: center;
+}
+
+.hero {
+  background-color: #4D455D;
+  height: 100vh;
+  color: white;
+  font-size: 40px;
+}
+
+/*first header bar applying height and background color */
+.Hero-main {
+  height: 50px;
+  background-color: var(--pink);
+}
+
+/*first img logo and name part and apply flex and space between them. */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 5px;
+}
+.top-nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 700px;
+  justify-content: space-around;
+
+
+
+  text-decoration: none;
+
+}
+
