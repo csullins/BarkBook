@@ -12,7 +12,7 @@ header {
   font-family: 'Lobster Two', cursive;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 8%;
+  padding-top: 5%;
   text-align: center;
   font-size: 14vw;
 }
@@ -267,6 +267,13 @@ input[type="password"] {
   margin-right: auto;
   padding: 5%;
 }
+.typeyDog {
+  height: 10vw;
+  width: 11vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+}
 .profile {
   padding: 20px;
 }
@@ -284,7 +291,7 @@ ul {
 .commentSection {
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0px auto 30px;
 }
 .comments {
@@ -345,7 +352,10 @@ li {
 .groomer{
   align-items: center;
 }
-
+#carouselText {
+  font-family: 'Lobster Two', cursive;
+  font-size: 25pt;
+}
 /* .hero {
   background-color: #4D455D;
   height: 100vh;
@@ -377,7 +387,9 @@ li {
 
 #all-reviews-header {
   text-align: center;
-  font-size: 30pt;  
+  font-size: 35pt; 
+  font-family: 'Lobster Two', cursive;
+  margin-bottom: 0;
 }
 a {
   color: white;
@@ -391,9 +403,9 @@ a {
   background-color: #15161b;
   height: 500px;
   align-items: center;
-
+  flex-direction: column;
 }
 .owl-carousel img {
-  width: 200px;
+  width: 100%;
   height: 300px;
 }
