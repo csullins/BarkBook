@@ -20,7 +20,7 @@ const newFormHandler = async function(event) {
     
       headers: { 'Content-Type': 'application/json' },
     });
-    alert("New Data is created");
+    // alert("New Data is created");
    
     document.location.replace('/groomer/'+ id);
   };

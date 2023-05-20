@@ -14,7 +14,7 @@ const groomerdata =
   },
   {
     "name":"Simon",
-    "profilePicture": "profile2.png",
+    "profilePicture": "profile17.png",
      "email": "Simon@gmail.com",
     "phone":"5123344545",
     "motto":"Carpe diem that groom!",
@@ -45,7 +45,7 @@ const groomerdata =
   },
   {
     "name":"Fami",
-    "profilePicture": "profile6.png",
+    "profilePicture": "profile16.png",
     "email": "Fami@gmail.com",
     "phone":"512112456",
     "motto":"Dog's best friend",
@@ -85,7 +85,7 @@ const groomerdata =
   },
   {
     "name":"Khyti",
-    "profilePicture": "profile11.png",
+    "profilePicture": "profile12.png",
      "email": "khyti@gmail.com",
     "phone":"512112456",
     "motto":"No pet too difficult, no groom too tough for Khyti.",
@@ -93,13 +93,11 @@ const groomerdata =
   },
   {
     "name":"Lalo",
-    "profilePicture": "profile12.png",
+    "profilePicture": "profile15.png",
      "email": "lalo@gmail.com",
     "phone":"512112456",
     "motto":"Likes pet",
   },
- 
-
 ];
 
 const seedGroomer = () => Groomer.bulkCreate(groomerdata);
