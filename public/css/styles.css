@@ -16,12 +16,11 @@ header {
   text-align: center;
   font-size: 14vw;
 }
-#header {
+.header {
   color: white;
   font-family: 'Lobster Two', cursive;
-  padding-top: 5%;
   text-align: center;
-  font-size: 10vw;
+  font-size: 6vw;
 }
 nav {
   display: flex;
@@ -296,7 +295,7 @@ ul {
   color: rgba(255, 251, 0, 0.771);
 }
 .commentSection {
-  width: 80%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   margin: 0px auto 30px;
@@ -377,7 +376,7 @@ a {
   right: 0;
   display: flex;
   background-color: #15161b;
-  height: 500px;
+  height: 700px;
   align-items: center;
   flex-direction: column;
 }
