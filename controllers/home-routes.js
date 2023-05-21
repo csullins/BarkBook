@@ -38,7 +38,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
      const comments = commentData.map((Comment) => Comment.get({ plain: true }));
 console.log(comments);
     res.render('all-reviews', {
-      layout: 'groomermain',
+      layout: 'dashboard',
       comments,
       loggedIn: req.session.loggedIn,
     });

@@ -21,6 +21,7 @@ header {
   font-family: 'Lobster Two', cursive;
   text-align: center;
   font-size: 6vw;
+  padding-top: 2%;
 }
 nav {
   display: flex;
@@ -205,51 +206,55 @@ input[type="password"] {
   
 }
 
-.loginGradient {
+.loginGradient, .profileGradient {
   height: 100vh;
-  background: linear-gradient(324deg, #09a7d285,  rgba(1, 3, 122, 0.508),  #09a7d297, #16c4797c);
+  background: linear-gradient(324deg,
+    rgba(19, 19, 60, 0.627), 
+    rgba(73, 15, 73, 0.627),
+    rgba(195, 55, 8, 0.627),
+    rgba(196, 117, 20, 0.627), 
+    rgba(58, 200, 143, 0.627),
+    rgba(0, 183, 255, 0.627),
+    rgba(28, 28, 192, 0.627),
+    rgba(5, 7, 21, 0.627)
+    );
   background-size: 600% 600%;
-  -webkit-animation: gradientAnimation 10s ease infinite;
-  -moz-animation: gradientAnimation 10s ease infinite;
-  -o-animation: gradientAnimation 10s ease infinite;
-  animation: gradientAnimation 10s ease infinite;
+  -webkit-animation: gradientAnimation 9s ease infinite;
+  -moz-animation: gradientAnimation 9s ease infinite;
+  -o-animation: gradientAnimation 9s ease infinite;
+  animation: gradientAnimation 9s ease infinite;
 }
 
 .homeGradient {
-  /* height: 110vw; */
+  /* height: 200vw; */
+  background-repeat: no-repeat;
   background-blend-mode: screen, hue, color, overlay, normal;
-  background: radial-gradient(at center center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) no-repeat, radial-gradient(at 70% 60%, rgb(195, 224, 96) 0%, rgba(195, 224, 96, 0) 30%), radial-gradient(at left bottom, rgb(0, 163, 203) 0%, rgba(0, 163, 203, 0) 70%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, rgb(18, 46, 119) 100%), linear-gradient(to right, rgb(98, 87, 147) 0%, rgb(213, 93, 100) 17%, rgb(228, 145, 41) 74%, rgb(192, 103, 28) 100%);
-}
-
-.profileGradient{
-  height: 100vh;
-  background: linear-gradient(324deg, #06556b9f,  rgba(1, 3, 122, 0.508),  #0b6a858a, #0c784965);
-  background-size: 600% 600%;
-  -webkit-animation: gradientAnimation 10s ease infinite;
-  -moz-animation: gradientAnimation 10s ease infinite;
-  -o-animation: gradientAnimation 10s ease infinite;
-  animation: gradientAnimation 10s ease infinite;
+  background: 
+    radial-gradient(at center center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) no-repeat, 
+    radial-gradient(at 70% 60%, rgb(195, 224, 96) 0%, rgba(195, 224, 96, 0) 30%),
+    radial-gradient(at left bottom, rgb(0, 163, 203) 0%, rgba(0, 163, 203, 0) 70%), 
+    linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, rgb(18, 46, 119) 100%),linear-gradient(to right, rgb(98, 87, 147) 0%, rgb(213, 93, 100) 17%, rgb(228, 145, 41) 74%, rgb(192, 103, 28) 100%);
 }
 
 @-webkit-keyframes gradientAnimation {
-  0%{background-position:15% 0%}
+  0%{background-position:75% 0%}
   50%{background-position:86% 100%}
-  100%{background-position:15% 0%}
+  100%{background-position:75% 0%}
 }
 @-moz-keyframes gradientAnimation {
-  0%{background-position:15% 0%}
+  0%{background-position:75% 0%}
   50%{background-position:86% 100%}
-  100%{background-position:15% 0%}
+  100%{background-position:75% 0%}
 }
 @-o-keyframes gradientAnimation {
-  0%{background-position:15% 0%}
+  0%{background-position:75% 0%}
   50%{background-position:86% 100%}
-  100%{background-position:15% 0%}
+  100%{background-position:75% 0%}
 }
 @keyframes gradientAnimation {
-  0%{background-position:15% 0%}
+  0%{background-position:75% 0%}
   50%{background-position:86% 100%}
-  100%{background-position:15% 0%}
+  100%{background-position:75% 0%}
 }
 
 
