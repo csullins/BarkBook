@@ -17,7 +17,7 @@ const loginFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/groomer');
       } else {
-        alert('Failed to log in.');
+        alert("That didn't work! Please correct username or password.");
       }
     }
   };
