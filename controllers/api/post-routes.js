@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Comment } = require('../../models/');
 const withAuth = require('../../utils/auth');
 
-// CREATE POST
+// CREATE new review 
 router.post('/review', withAuth, async (req, res) => {
   const body = req.body;
     console.log(body);

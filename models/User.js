@@ -1,3 +1,5 @@
+// Create table User usig sequelize method.
+
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/config');

@@ -1,3 +1,5 @@
+// Create Groomer table using sequelize
+
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/config');

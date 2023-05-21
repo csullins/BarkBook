@@ -10,17 +10,25 @@ router.post('/', async (req, res) => {
       email: req.body.email,
       password: req.body.password,
     });
-
     req.session.save(() => {
+      req.session.userId=dbUserData.id;
       req.session.loggedIn = true;
+      console.log(
+        '🚀 ~ file: user-routes.js ~ line 57 ~ req.session.save ~ req.session.cookie',
+        req.session.cookie
+      );
 
-      res.status(200).json(dbUserData);
+      res
+        .status(200)
+        .json({ user: dbUserData, message: 'You are now logged in!' });
     });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
+
+   
 
 // Login
 router.post('/login', async (req, res) => {
