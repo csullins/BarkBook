@@ -1,3 +1,5 @@
+// Create Comment table using sequelize method
+
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/config');
 

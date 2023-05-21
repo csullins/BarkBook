@@ -1,3 +1,5 @@
+// set routes for post and user
+
 const router = require('express').Router();
 
 const userRoutes = require('./user-routes.js');

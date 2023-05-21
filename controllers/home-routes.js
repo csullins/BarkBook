@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 
 
  // GET all groomers for homepage
-router.get('/groomer', async (req, res) => {
+router.get('/groomer', withAuth,async (req, res) => {
   try {
     const dbGroomerData = await Groomer.findAll();
 
@@ -26,6 +26,7 @@ router.get('/groomer', async (req, res) => {
   }
 });
 
+// CREATE all reviews from user side.
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
     
@@ -49,8 +50,8 @@ console.log(comments);
 
  
 
-// GET one gallery
-router.get('/groomer/:id', async (req, res) => {
+// GET one grommer profile
+router.get('/groomer/:id',withAuth, async (req, res) => {
   try {
     const dbGroomerData = await Groomer.findByPk(req.params.id, {
       include: [
@@ -81,8 +82,8 @@ console.log(groomer.name);
 
 
 
-// AFTER CLICK ON NEW REVIEW
-router.get('/groomer/:id/newreview', async (req, res) => {
+// After click on newreview button , go to "newreview" form
+router.get('/groomer/:id/newreview', withAuth,async (req, res) => {
 
   try
   {
@@ -117,8 +118,4 @@ console.log(groomerreview);
   
 });
 
-
-
-
-
-  module.exports = router;
+module.exports = router;

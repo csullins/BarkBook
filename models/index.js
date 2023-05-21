@@ -1,3 +1,4 @@
+// Create realtionship between tables using sequelize
 
 const User = require('./User');
 const Comment = require('./Comment');
