@@ -80,9 +80,9 @@ const groomerdata =
 
   },
   {
-    "name":"Jay",
+    "name":"Gerti",
     "profilePicture": "profile10.png",
-     "email": "jay@gmail.com",
+     "email": "gertikins@aol.com",
     "phone":"(733)462-5664",
     "motto":"Whenever you have a grooming emergency, my doors are always open.",
 
